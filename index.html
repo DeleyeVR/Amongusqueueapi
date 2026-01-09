@@ -1,18 +1,23 @@
 <!DOCTYPE html>
-<html lang="pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja Strona na GitHub Pages</title>
+    <title>Among Us Queue Panel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Witaj na mojej stronie!</h1>
-    <div id="app">
-        <p>Ładowanie danych z JavaScript...</p>
+    <div class="container">
+        <h1>Among Us Queue Panel</h1>
+        <div class="input-section">
+            <label for="connectCode">Connect Code:</label>
+            <input type="text" id="connectCode" placeholder="Enter your code">
+            <button id="saveCode">Save</button>
+        </div>
+        <div class="queue-section">
+            <h2>Queue Status</h2>
+            <pre id="queueOutput">Loading...</pre>
+        </div>
     </div>
-
-    <script src="index.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
