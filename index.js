@@ -1,9 +1,17 @@
-// Variable declaration
-const userName = "Alice"; 
-let age = 25;
+// Prosty skrypt testowy
+document.addEventListener('DOMContentLoaded', () => {
+    const app = document.getElementById('app');
+    
+    const teraz = new Date();
+    const rok = teraz.getFullYear();
 
-// Arithmetic and update
-age += 1; 
+    app.innerHTML = `
+        <p>JavaScript działa poprawnie!</p>
+        <p>Mamy obecnie rok: <strong>${rok}</strong>.</p>
+        <button id="btn">Kliknij mnie</button>
+    `;
 
-// Output to the browser console
-console.log(`Hello, ${userName}! You are now ${age}.`);
+    document.getElementById('btn').addEventListener('click', () => {
+        alert('Pozdrowienia z GitHub Pages!');
+    });
+});
